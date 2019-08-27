@@ -54,6 +54,8 @@ if __name__ == "__main__":
     divbtn = tk.Button(num_frame, text="/", height=7, width=14, command=lambda: press("/"))
     equalbtn = tk.Button(num_frame, text="=", height=7, width=14, command=lambda: equal_press())
     floatbtn = tk.Button(num_frame, text=".", height=7, width=14, command=lambda: press("."))
+    leftparbtn = tk.Button(num_frame, text="(", height=7, width=14, command=lambda: press("("))
+    rightparbtn = tk.Button(num_frame, text=")", height=7, width=14, command=lambda: press(")"))
 
     main_frame.place(relx=0.05, rely=0.05, relheight=0.9, relwidth=0.9)
     num_frame.place(relx=0, rely=0.2, relheight=0.8, relwidth=1)
@@ -75,4 +77,6 @@ if __name__ == "__main__":
     divbtn.grid(column=2, row=3)
     equalbtn.grid(column=3, row=3)
     floatbtn.grid(column=1, row=4)
+    leftparbtn.grid(column=0, row=4)
+    rightparbtn.grid(column=2, row=4)
     window.mainloop()
